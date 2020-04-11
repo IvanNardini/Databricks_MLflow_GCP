@@ -1,0 +1,23 @@
+docker container run --name mlflow --publish 5000:5000 -it in92/py37 bash
+
+pip install mlflow
+
+pip install scikit-learn
+
+#install conda
+
+git clone https://github.com/mlflow/mlflow
+
+cd mlflow/examples 
+
+mlflow server --host 0.0.0.0
+
+cd /mlflow/examples/sklearn_elasticnet_wine 
+
+python train.py 1 0.5
+
+python train.py 0.5 0.5
+
+python train.py 0.5 1
+
+
