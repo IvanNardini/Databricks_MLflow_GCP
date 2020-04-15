@@ -1,3 +1,4 @@
+
 docker container run --name mlflow --publish 5000:5000 -it in92/py37 bash
 
 pip install mlflow
@@ -19,5 +20,12 @@ python train.py 1 0.5
 python train.py 0.5 0.5
 
 python train.py 0.5 1
+
+--------------------------------
+--------------------------------
+--------------------------------
+
+
+docker run -p 10000:8888 -v "$PWD":/home/jovyan/work jupyter/engineering-pyspark
 
 
