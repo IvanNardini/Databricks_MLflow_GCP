@@ -8,6 +8,13 @@ docker build -t ivnard/jupeterlab-sparkme .
 # Run Jupyter Container
 docker run -p 10000:8888 -v "$PWD":/home/jovyan/work jupyter/engineering-pyspark
 
+###
+How to install mleap on docker image
+###
+spark-shell --packages ml.combust.mleap:mleap-spark_2.11:0.15.0
+cp -r /root/.ivy2/jars /usr/local/spark/jars
+mv /root/.ivy2/jars/*.jar /usr/local/spark/jars/
+ls -ltra /usr/local/spark/jars
 
 docker container run --name mlflow --publish 5000:5000 -it in92/py37 bash
 
