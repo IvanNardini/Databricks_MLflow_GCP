@@ -12,7 +12,7 @@ BUCKET=${2:-cloud-demo-databrick-gcp}
 
 #Create a BUCKET name if not exist
 if ! gsutil ls | grep -q gs://${BUCKET}/; then
-  gsutil mb -l ${REGION} gs://${BUCKET}
+  gsutil mb -l ${REGION} -b on gs://${BUCKET}
   #Upload cluster_init.sh, boston_house_prices_toscore.csv and Boston_lrModel_mleap.zip, score.py
   gsutil cp /home/ivan_nardini/Databricks_MLflow_GCP/0_setup/setup_cluster.sh gs://${BUCKET}/0_init/init.sh
   gsutil cp /home/ivan_nardini/Databricks_MLflow_GCP/1_data/boston_house_prices.csv gs://${BUCKET}/1_data/boston_house_prices_toscore.csv
