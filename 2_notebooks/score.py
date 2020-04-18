@@ -125,15 +125,16 @@ def main():
     parser.add_argument('--input', dest="inputpath_CSV",
                         required=True, help='Provide the input path of data to score')
     
-    parser.add_argument('--model', dest="modelPath",
-                        required=True, help='Provide the model path to score')
+    # parser.add_argument('--model', dest="modelPath",
+    #                     required=True, help='Provide the model path to score')
     
     parser.add_argument('--output', dest="outputpath_CSV",
                         required=True, help='Provide the model path to score')
 
     args = parser.parse_args()
     input_path_CSV = args.inputpath_CSV
-    modelPath = args.modelPath
+    # modelPath = args.modelPath
+    modelPath = '/tmp/model.zip'
     output_path_CSV = args.outputpath_CSV
   
     try:
