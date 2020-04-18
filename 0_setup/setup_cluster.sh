@@ -1,16 +1,24 @@
 #!/bin/bash
 
-#Pass CLUSTER NAME and PROJECT
+# setup_cluster.sh
+# Create a plain vanilla cluster if doesn't exist with config.
+# REGION  - Region name (default eu)
+# BUCKET - Bucker name (default cloud-demo-databrick-gcp)
 
+
+#Pass REGION and BUCKET names (or use default parameters)
+CLUSTER_NAME=${1:-cluster-0000}
+BUCKET=${2:-cloud-demo-databrick-gcp}
+REGION=${3:-europe-west6}
+ZONE=${4:-europe-west6-a}
 
 # Setup cluster
-
-gcloud beta dataproc clusters create cluster-24d3 \
---bucket cloud-demo-databrick-gcp \
---region us-central1 \
+gcloud beta dataproc clusters create ${CLUSTER_NAME} \
+--bucket ${BUCKET} \
+--region ${REGION} \
 --subnet default \
 --no-address \
---zone us-central1-b \
+--zone ${ZONE} \
 --master-machine-type n1-standard-4 \
 --master-boot-disk-size 500 \
 --num-workers 2 \
@@ -18,5 +26,4 @@ gcloud beta dataproc clusters create cluster-24d3 \
 --worker-boot-disk-size 500 \
 --image-version 1.3-deb9 \
 --project gel-sassandbox \
---initialization-actions 'gs://cloud-demo-databrick-gcp/0_init/init.sh','gs://cloud-demo-databrick-gcp/0_init/pip-install.sh' \
---metadata PIP_PACKAGES=mleap==0.15.0 pyspark==2.4.5
+--initialization-actions 'gs://cloud-demo-databrick-gcp/0_init/init.sh'

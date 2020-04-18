@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # setup.sh
-# Create a buckek if doesn't exist. And load deployment scripts (.sh, .py)
+# Create a bucket if doesn't exist. And load deployment scripts (.sh, .py)
 # REGION  - Region name (default eu)
 # BUCKET - Bucker name (default cloud-demo-databrick-gcp)
 
