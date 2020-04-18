@@ -18,6 +18,5 @@ gcloud beta dataproc clusters create ${CLUSTER_NAME} \
 --region ${REGION} \
 --zone ${ZONE} \
 --optional-components ANACONDA,JUPYTER \
---scopes 'https://www.googleapis.com/auth/cloud-platform' \
 --project gel-sassandbox \
 --initialization-actions 'gs://cloud-demo-databrick-gcp/0_init/init.sh'
