@@ -10,9 +10,7 @@ It is about:
 2. **Export Mleap flavor format of Champion Model**
 3. **Engineer the score code in a way that it can be deploy in a batch job on GCP Dataproc cluster**
 
-Below an high level architecture of the project
-
-Below the **high-level architecture of the solution**: 
+Below the **high-level architecture of the project**: 
 
 <img src="https://github.com/IvanNardini/Databricks_MLflow_GCP/raw/master/architecture.png">
 
