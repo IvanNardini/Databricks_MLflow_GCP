@@ -6,7 +6,7 @@
 # BUCKET - Bucker name (default cloud-demo-databrick-gcp)
 
 
-#Pass REGION and BUCKET names (or use default parameters)
+#Pass all parameters (or use default parameters)
 CLUSTER_NAME=${1:-cluster-00000}
 BUCKET=${2:-cloud-demo-databrick-gcp}
 REGION=${3:-europe-west6}
@@ -14,7 +14,6 @@ ZONE=${4:-europe-west6-a}
 PROJECT=${5:-gel-sassandbox}
 
 # Setup cluster
-
 gcloud beta dataproc clusters create ${CLUSTER_NAME} \
 --enable-component-gateway \
 --bucket ${BUCKET} \
