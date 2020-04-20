@@ -147,7 +147,7 @@ def main():
 #                 'ml.combust.mleap:mleap-spark-base_2.11:0.9.3,ml.combust.mleap:mleap-spark_2.11:0.9.3') \
 #         .appName("ClassifierTraining") \
 #         .getOrCreate()
-        spark = SparkSession.builder.appName('MyApp').getOrCreate()
+        spark = SparkSession.builder.appName('RegressionScoring').getOrCreate()
         spark.sparkContext.setLogLevel("OFF")
         print('Created a SparkSession')
     
