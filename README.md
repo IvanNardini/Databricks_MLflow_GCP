@@ -61,14 +61,12 @@ Then make .sh in 0_setup folder executable
 
 ```
 chmod +x 1_setup_bucket.sh 2_setup_cluster.sh 3_submit_score_job.sh
-
 ```
 Then run to create the bucket and the cluster run
 
 ```
 ./1_setup_bucket.sh 
 ./2_setup_cluster.sh
-
 ```
 Finally you can run 
 
