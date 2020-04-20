@@ -32,4 +32,4 @@ gcloud beta dataproc clusters create ${CLUSTER_NAME} \
 --scopes 'https://www.googleapis.com/auth/cloud-platform' \
 --project ${PROJECT} \
 --initialization-actions 'gs://goog-dataproc-initialization-actions-europe-west6/conda/bootstrap-conda.sh','gs://goog-dataproc-initialization-actions-europe-west6/conda/install-conda-env.sh',"gs://${BUCKET}/0_setup/cluster_config/init.sh" \
---metadata MINICONDA_VARIANT=3,MINICONDA_VERSION=latest,PIP_PACKAGES=mleap==0.15.0 pyspark==2.4.5 gcsfs==0.6.1
+--metadata 'MINICONDA_VARIANT=3','MINICONDA_VERSION=latest','PIP_PACKAGES=mleap==0.15.0 pyspark==2.4.5 gcsfs==0.6.1'
