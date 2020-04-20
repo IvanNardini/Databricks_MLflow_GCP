@@ -50,10 +50,32 @@ I've tried to make it as simple as possible.
 
 Look at usage section below.
 
-## Usage
+## Usage (Work in progress...)
+
+On GCP Cloud Shell, clone the repo.
 
 ```
+git clone https://github.com/IvanNardini/Databricks_MLflow_GCP.git
 ```
+Then make .sh in 0_setup folder executable
+
+```
+chmod +x 1_setup_bucket.sh 2_setup_cluster.sh 3_submit_score_job.sh
+
+```
+Then run to create the bucket and the cluster run
+
+```
+./1_setup_bucket.sh 
+./2_setup_cluster.sh
+
+```
+Finally you can run 
+
+```
+3_submit_score_job.sh
+```
+to submit the spark score job. Or you can use the GUI.
 
 ## Contributing
 
