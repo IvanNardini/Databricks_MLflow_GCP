@@ -125,6 +125,8 @@ def main():
     parser.add_argument('--input', dest="inputpath_CSV",
                         required=True, help='Provide the input path of data to score')
     
+    #Mleap deserializeFromBundle method does not work with URL on GCP
+    
     # parser.add_argument('--model', dest="modelPath",
     #                     required=True, help='Provide the model path to score')
     
@@ -144,7 +146,7 @@ def main():
 #         .config('spark.executor.memory', TOTAL_MEMORY) \
 #         .config('spark.cores.max', TOTAL_CORES) \
 #         .config('spark.jars.packages',
-#                 'ml.combust.mleap:mleap-spark-base_2.11:0.9.3,ml.combust.mleap:mleap-spark_2.11:0.9.3') \
+#                 'ml.combust.mleap:mleap-spark-base_2.11:0.15.0,ml.combust.mleap:mleap-spark_2.11:0.15.0') \
 #         .appName("ClassifierTraining") \
 #         .getOrCreate()
         spark = SparkSession.builder.appName('RegressionScoring').getOrCreate()
