@@ -77,8 +77,8 @@ to submit the spark score job. Or you can use the GUI.
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Test it. And please provide me feedback for improvements. Pull requests are welcome as well.
 
-Please make sure to update tests as appropriate.
+And feel free to reach me at [Ivan Nardini](ivan.nardini@sas.com )
 
 
