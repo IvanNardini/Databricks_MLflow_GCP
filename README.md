@@ -80,5 +80,3 @@ to submit the spark score job. Or you can use the GUI.
 Test it. And please provide me feedback for improvements. Pull requests are welcome as well.
 
 And feel free to reach me at [Ivan Nardini](ivan.nardini@sas.com )
-
-
