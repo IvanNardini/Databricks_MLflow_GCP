@@ -14,7 +14,7 @@ Below the **high-level architecture of the project**:
 
 <img src="https://github.com/IvanNardini/Databricks_MLflow_GCP/raw/master/architecture.png">
 
-And some content of the demo:
+And some **content of the demo**:
 
 <img src="https://github.com/IvanNardini/Databricks_MLflow_GCP/raw/master/demo.gif">
 
