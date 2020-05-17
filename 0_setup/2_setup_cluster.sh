@@ -11,7 +11,7 @@ CLUSTER_NAME=${1:-cluster-00000}
 BUCKET=${2:-cloud-demo-databrick-gcp}
 REGION=${3:-europe-west6}
 ZONE=${4:-europe-west6-a}
-PROJECT=${5:-gel-sassandbox}
+PROJECT=${5:-sandbox}
 
 # Setup cluster
 gcloud beta dataproc clusters create ${CLUSTER_NAME} \
